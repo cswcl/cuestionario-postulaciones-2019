@@ -5,6 +5,10 @@ const assert = require('assert');
 
 const sortString = aString => {
   // Solve here...
+  return aString.split('') // convert to arr
+  .sort() // sorting with arr prototype methods
+  .join('') // return to string
+
 };
 
 try {
