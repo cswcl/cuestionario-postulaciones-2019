@@ -6,7 +6,7 @@
 const assert = require('assert');
 
 const hasDuplicatedCharacters = aString => {
-  // Solver here...
+ 
 };
 
 try {
