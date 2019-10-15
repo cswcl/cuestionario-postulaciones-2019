@@ -6,9 +6,6 @@
 const assert = require('assert');
 
 const hasDuplicatedCharacters = aString => {
-
-
-
   for (i = 0; i < aString.length / 2; i++) {
     for (j = aString.length; j > aString.length / 2; j--) {
       if (aString[i] === aString[j])
