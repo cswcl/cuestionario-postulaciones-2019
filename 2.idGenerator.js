@@ -11,7 +11,10 @@
 const assert = require('assert');
 
 const idGenerator = () => {
-  // Solve here...
+  //closures methods
+ let idGen = 0; //init idGenerator in ZERO.
+ return ()=> { return idGen+=1} // return anonymous f(x), idGen++
+  
 };
 
 try {
