@@ -11,8 +11,16 @@
 const assert = require('assert');
 
 const idGenerator = () => {
-  // Solve here...
+  let instancia = 1;
+  return () => instancia++;
 };
+
+const firstGenerator = idGenerator();
+const secondGenerator = idGenerator();
+console.log(firstGenerator()); // imprime: 1
+console.log(firstGenerator()); // imprime: 2
+console.log(firstGenerator()); // imprime: 3
+console.log(secondGenerator()); // imprime: 1
 
 try {
   const firstGenerator = idGenerator();

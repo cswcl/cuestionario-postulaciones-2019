@@ -4,8 +4,11 @@
 const assert = require('assert');
 
 const sortString = aString => {
-  // Solve here...
+
+  return aString.split('').sort().join('');
 };
+
+
 
 try {
   assert.equal(sortString('Zaratustra'), 'Zaaarrsttu',

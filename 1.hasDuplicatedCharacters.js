@@ -6,8 +6,17 @@
 const assert = require('assert');
 
 const hasDuplicatedCharacters = aString => {
-  // Solver here...
-};
+
+  for (let i = 0; i <= aString.length; i++) {
+    for (let j = i + 1; j <= aString.length; j++) {
+      if (aString[j] === aString[i]) {
+        return true;
+      }
+
+    }
+  }
+  return false;
+}
 
 try {
   assert.equal(hasDuplicatedCharacters('elefante'), true,
