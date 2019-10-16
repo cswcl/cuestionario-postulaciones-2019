@@ -21,7 +21,7 @@ const hasDuplicatedCharacters = aString => {
 try {
   assert.equal(hasDuplicatedCharacters('elefante'), true,
     'Se esperaba encontrar caracteres duplicados.');
-  assert.equal(hasDuplicatedCharacters(''), false,
+  assert.equal(hasDuplicatedCharacters('hola'), false,
     'Se encontraron caracteres duplicados inesperados.');
   console.log('✓ hasDuplicatedCharacters OK');
 } catch (e) {

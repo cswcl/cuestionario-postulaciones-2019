@@ -12,25 +12,9 @@ const assert = require('assert');
 
 const idGenerator = () => {
   // Solve here...
-  let num = [1,2,3]
-  
-  firstGenerator(num);
-
+  let count = 1;
+  return () => { return count++}
 };
-
-const firstGenerator = (array) =>{
-  
-   for(let i = 0; i<array.length; i++){
-      if(array[i]===3){
-        secondGenerator(array[0])
-      }
-    }
-    console.log(firstGenerator)
-}
-
-const secondGenerator=(num)=>{
-    console.log(num);
-  }
 
 try {
   const firstGenerator = idGenerator();
