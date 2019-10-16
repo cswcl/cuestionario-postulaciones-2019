@@ -11,8 +11,11 @@
 const assert = require('assert');
 
 const idGenerator = () => {
-  // Solve here...
+let cont = 0
+
+return () => cont +=1
 };
+
 
 try {
   const firstGenerator = idGenerator();

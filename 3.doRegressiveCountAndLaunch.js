@@ -4,12 +4,25 @@
 // Actualmente la función está rota: imprime 'fire' al principio y luego
 // toda la cuenta sin espera entre número y número.
 
-const doRegressiveCountAndLaunch = callBack => {
+const doRegressiveCountAndLaunch = async callBack => {
   for (let n = 10; n > 0; --n) {
-    setTimeout(() => console.log(n), 1000);
+    await new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(console.log(n));
+      }, 1000);
+    })
   }
   callBack();
-}
 
+}
 console.log('Preparing for launch...');
 doRegressiveCountAndLaunch(() => console.log('fire'));
+
+
+
+
+
+
+
+
+
