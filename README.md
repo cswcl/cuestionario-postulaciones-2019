@@ -4,8 +4,7 @@ Ejercicios pre-entrevista para postulantes junior.
 
 ## Instrucciones
 
-1. Fork-ea el repositorio en tu cuenta de GitHub.
-2. Clona en tu máquina tu fork.
+1. Clona el repositorio en tu máquina.
 3. Crea una rama (branch) con el formato `nombre-apellido` usando tu nombre
    y apellido.
 4. Resuelve cada ejercicio, editando el mismo archivo que lo describe y
