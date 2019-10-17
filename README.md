@@ -10,14 +10,12 @@ Ejercicios pre-entrevista para postulantes junior.
    y apellido.
 4. Resuelve cada ejercicio, editando el mismo archivo que lo describe y
    commiteando el ejercicio resuelto.
-5. Realiza un pull-request desde tu rama al repositorio original contra la
-   rama `master`.
+5. Crea archivos de patch con:
+```git format-patch master```
+6. Envía los archivos a la dirección de mail: work@csw.cl
 
 ## Evaluación
 
-Se analizará en primer lugar que cada script produzca los resultados, y
-posteriormente, los que no hayan sido descartados, se leerán para analizar
-la solución de código.
+Se verificará en primer lugar que cada script **corra** y produzca los resultados esperados, posteriormente, los que no hayan sido descartados, se leerán para analizar la solución de código.
 
-Aquellos scripts que no produzcan los resultados esperados descartarán
-automáticamente la postulación.
+Aquellos scripts que no produzcan los resultados esperados descartarán automáticamente la postulación.
