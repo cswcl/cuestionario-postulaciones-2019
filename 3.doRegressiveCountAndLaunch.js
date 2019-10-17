@@ -4,18 +4,14 @@
 // Actualmente la función está rota: imprime 'fire' al principio y luego
 // toda la cuenta sin espera entre número y número.
 
-let n = 10;
-const doRegressiveCountAndLaunch = callBack => {
-  console.log(n)
-  n -= 1;
-  if (n == 0) {
-    console.log('Fire');
+window.onload = doRegressiveCountAndLaunch;
+let totalTime = 10;
+function doRegressiveCountAndLaunch() {
+  console.log(totalTime)
+  if (totalTime == 1) {
+    console.log("fire")
   } else {
-
-    setTimeout("doRegressiveCountAndLaunch()", 1000);
-
-
+    totalTime -= 1; setTimeout("doRegressiveCountAndLaunch()", 1000);
   }
 }
 console.log('Preparing for launch...');
-doRegressiveCountAndLaunch(() => console.log('fire'));
